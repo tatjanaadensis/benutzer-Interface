@@ -10,11 +10,12 @@
 </head>
 <body>
   <div class="logo">
-    <%=image_tag("belectric_logo_259x32.jpg", alt: "Belectric Logo")%>
+    <%= image_tag("belectric_logo_259x32.jpg", alt: "Belectric Logo") %>
   </div>
   
   <!-- TODO: factor out to separate view -->
   <div class="info">
+    <%= image_tag("belectric_heatpump.jpg", alt: "Heatpumpt") %>
     <p><%= Time.now %></p>
 	<p>Außentemperatur: 15°C</p>
 	<p>Bebriebsmodus: Super-Automatik</p>
