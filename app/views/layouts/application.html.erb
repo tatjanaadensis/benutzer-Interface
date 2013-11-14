@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Hello</title>
+  <%#= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%#= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div class="logo">
+    <%=image_tag("belectric_logo_259x32.jpg", alt: "Belectric Logo")%>
+  </div>
+  
+  <!-- TODO: factor out to separate view -->
+  <div class="info">
+    <p><%= Time.now %></p>
+	<p>Außentemperatur: 15°C</p>
+	<p>Bebriebsmodus: Super-Automatik</p>
+  </div>
+
+<%= yield %>
+
+  <div class="footer">
+    <p>Abmelden</p>
+  </div>
+
+</body>
+</html>
